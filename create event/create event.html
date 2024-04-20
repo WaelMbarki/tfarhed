@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style_create_event.css">
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width-device-width initial-scale=1.0">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- hedi el heka el sahm mtaa el category -->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> <!-- hedi lel datatime costumozation -->
+  	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> <!-- iconscout lel icons lel location -->
+	<title>Create event</title>
+</head>
+<body>
+  
+	<div class="container">
+		<header>Build your event page</header>
+		<p class="parag">Add all of your event details and let attendees know what to expect</p>
+		<form id="form2" name="ff" method="post" action="event_created.html">
+
+			<!-- Event name -->
+        	<div class="input-fields">
+          		<div class="event-titles">
+            		<label>What’s the name of your event?</label><br>
+          		</div>
+          		<input type="text" name="title" placeholder="Event title" required>
+        	</div>
+
+        	<!-- category -->
+        	<div class="event-titles">
+            	<label>Category</label><br>
+         	</div>
+         	<div class="wrapper-category">
+          		<div class="select-btn-category">
+          			<span>Category</span>
+          			<i class="uil uil-angle-down"></i>
+          		</div>
+          		<div class="content-category">
+          			<div class="search-category">
+          				<i class="uil uil-search"></i>
+						<input type="text" placeholder="Search">
+					</div>
+					<ul class="options-category"></ul>
+				</div>
+			</div>
+
+        	<!--Location -->
+          	<div class="event-titles">
+            	<label>Where is it located?</label><br>
+          	</div>
+        	<div class="wrapper">
+          		<div class="select-btn">
+            		<span>Location</span>
+           			<i class="uil uil-angle-down"></i>
+          		</div>
+          		<div class="content">
+            		<div class="search">
+              			<i class="uil uil-search"></i>
+              			<input type="text" placeholder="Search">
+            		</div>
+            		<ul class="options"></ul>
+          		</div>
+        	</div>
+
+        	<!-- price -->
+        	<div class="input-fields">
+          		<div class="event-titles">
+            		<label>How much do you want to charge for tickets?</label><br>
+          	</div>
+          		<input type="number"  name="price" placeholder="$0.00" required>
+        	</div>
+       		 <!-- Description -->
+        	<div class="event-titles">
+          		<label>Event Discription</label><br>
+        	</div>
+          	<textarea cols="81" rows="8" name="desc"></textarea>
+        	<!-- Image -->
+        	<div class="input-fields">
+          		<div class="event-titles">
+            		<label>Event Image</label><br>
+          		</div>
+          		<div class="hero">
+            		<label for="input-file" id="drop-area">
+              			<input type="file" accept="image/*" id="input-file" hidden>
+              			<div id="img-view">
+                			<img src="upb.png" class="upload-image">
+                			<p>Upload image</p>
+              			</div>
+            		</label>
+          		</div>
+        	</div>
+        	<!-- Date -->
+        	<div class="input-fields">
+          		<div class="event-titles">
+            		<label>When does your event start and end?</label><br>
+          		</div>
+          		<div class="date-details">
+            		<h4>Start Time</h4>
+            		<input type="datetime-local" placeholder="YYYY-MM-DD">
+            		<h4>End Time</h4>
+            		<input type="datetime-local" placeholder="YYYY-MM-DD">
+          		</div>
+        	</div>
+        	<!-- button -->
+        	<button class="createBtn">
+          		<span class="btnText">CREATE EVENT</span>
+          		<i class="uil uil-navigator"></i>
+        	</button>
+		</form>
+	</div>
+<script src="java_create_event.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> <!-- lel datatime hedi -->
+<script >
+  config=
+  {
+      enableTime: true,
+      dateFormat: "Y-m-d H:i",
+      altInput: true,
+      altFormat: "F j, Y(h:S K)"
+  }
+  flatpickr("input[type=datetime-local]",config);
+</script>
+</body>
+</html>

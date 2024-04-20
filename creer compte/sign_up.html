@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="sign_up.css">
+<head>
+	<title></title>
+</head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-wdith-initial-scale=1.0">
+  	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> <!-- sahm el button -->
+	<title>Sign Up</title>
+<body>
+	<div class="container">
+		<header>Registration</header>
+		<form id="form1" name="f" method="post" action="sign_up.php">
+			<div class="form first">
+				<div class="details personal">
+					<span class="title">Personal Details</span>
+
+					<div class="fields">
+						<div class="input-field">
+							<label>Full Nmae</label>
+							<input type="text" name="name" placeholder="Enter your full name" required>
+						</div>
+
+						<div class="input-field">
+							<label>Date of Birth</label>
+							<input type="date" name="birth" placeholder="YYYY-MM-DD" required>
+						</div>
+
+						<div class="input-field">
+							<label>Cin</label>
+							<input type="text" name="cin" placeholder="Enter your cin">
+						</div>
+
+						<div class="input-field">
+							<label>Mobile Number</label>
+							<input type="number" name="phone" placeholder="Enter your mobile number" required>
+						</div>
+
+						<div class="input-field">
+							<label>Gender</label>
+							<input type="text" name="gender" placeholder="Enter your gender (M/F)" required>
+						</div>
+
+						<div class="input-field">
+							<label>State</label>
+							<input type="text" name="state" placeholder="Enter your state" required>
+						</div>
+						<div class="input-field">
+							<label>Email</label>
+							<input type="email" name="email" placeholder="Enter your email" required>
+						</div>
+
+						<div class="input-field">
+							<label>Password</label>
+							<input type="Password" name="pwd" placeholder="Enter your Password" required>
+						</div>
+
+						<div class="input-field">
+							<label>Confirm Password</label>
+							<input type="Password" name="verif_pwd" placeholder="Confirm your Password" required>
+						</div>
+					</div>
+				</div>
+				<button type="subbmit"  class="createBtn" onclick="return verif()" >
+					<span class="btnText">Sign Up</span>
+					<i class="uil uil-navigator"></i>
+				</button>
+			</div>
+		</form>
+	</div>
+<script langauge="javascript" src="sign_up.js"></script>
+</body>
+</html>
