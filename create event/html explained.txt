@@ -1,6 +1,0 @@
-<meta charset="utf-8"> : html document encoded using utf-8 ( representation de text et symbol)
-<meta name="viewport" content="width-device-width initial-scale=1.0"> : bech el contenu mtaa el page yemchi m3a el device
-screen , bech hekeka el contenu mtaa el screen yemchi mrigel m3a ay device
-<div> : bech tegroupi el elemnts , behi el ta9sim el hajet kima : heraders , footers , sidebars and content areas
-<span> : for a small manipulation in a large block ( lel color , size , font size ) , ki tzidha title ahawka information
-( el element aatineha class esmha title lel css )
